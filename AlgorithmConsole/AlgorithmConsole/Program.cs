@@ -11,8 +11,10 @@ namespace AlgorithmConsole
     {
         static void Main(string[] args)
         {
-            BubbleSort bubbleSort = new BubbleSort();
-            bubbleSort.StartUp();
+            //BubbleSort bubbleSort = new BubbleSort();
+            //bubbleSort.StartUp();
+            SelectionSort selectionSort = new SelectionSort();
+            selectionSort.StartUp();
         }
     }
 }
