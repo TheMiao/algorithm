@@ -18,7 +18,7 @@ namespace AlgorithmConsole
 
         }
 
-        public void BubbleSort1(int[] intList)
+        private void BubbleSort1(int[] intList)
         {
             var watch = new Stopwatch();
             watch.Start();
@@ -54,7 +54,7 @@ namespace AlgorithmConsole
          * 当交换到arr数组中7之前，也就是下标为4的时候，不再交换，说明后面的已经有序，下次就直接比较到下标为4的位置，后面的不再比较。 
          * 另外，如果是倒序排正序，则没有优化，比较n*(n-1)/2次。
          */
-        public void BubbleSort2(int[] intList)
+        private void BubbleSort2(int[] intList)
         {
 
             var watch = new Stopwatch();
