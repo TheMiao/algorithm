@@ -23,18 +23,21 @@ namespace AlgorithmConsole
             {
                 var min = intList[i];
                 int minIndex = i;
-                for (int j = i+1; j < intList.Length; j++)
+                for (int j = i+1; j < intList.Length; j++) //遍历所有数组的数
                 {
-                    if (min > intList[j])
+                    if (min > intList[j]) //如果此轮选择的值大于正在遍历值
                     {
-                        min = intList[j];
-                        minIndex = j;
+                        min = intList[j]; //选择正在遍历的值为最小值
+                        minIndex = j; //记录下标
                     }
                 }
-                if (minIndex != i)
+                
+                //结束第一轮的遍历, 开始i和找到最小的数位置!
+                if (minIndex != i) // 如果找到比当前目标更小的最小值
                 {
-                    intList[minIndex] = intList[i];
-                    intList[i] = min;
+                    intList[minIndex] = intList[i]; //交换所得到的最小值到当前遍历的位置
+                    
+                    intList[i] = min; //交换大值到数列中最后选中的最小值当中
                 }
             }
 
