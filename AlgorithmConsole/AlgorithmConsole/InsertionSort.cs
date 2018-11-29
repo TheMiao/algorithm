@@ -8,7 +8,7 @@ namespace AlgorithmConsole
     {
         public void StartUp()
         {
-            int[] arr = { 15, 0, 10, 50, 55, 35, 15, 20 }; //待排序数组
+            int[] arr = { 15, 0, 10, 50, 55, 35, 16, 20 }; //待排序数组
             InsertionSort1(arr);
         }
 
@@ -19,18 +19,18 @@ namespace AlgorithmConsole
             var temp = 0;
             for (int i = 0; i < intList.Length; i++)
             {
-                temp = intList[i];
-                for (int j = i - 1; j >= 0; j--)
+                temp = intList[i]; // 设定当前循环值为temp
+                for (int j = i - 1; j >= 0; j--)   // 反向循环
                 {
-                    if (intList[j] > temp)
+                    if (intList[j] > temp) // 如果当前值大于 temp值
                     {
-                        intList[j + 1] = intList[j];
-                        if (j == 0)
+                        intList[j + 1] = intList[j]; // 交换两个位置的值
+                        if (j == 0) // 如果循环到头
                         {
-                            intList[0] = temp;
+                            intList[0] = temp; // 首个值为最小值
                         }
                     }
-                    else
+                    else // 如果当前值小于temp值
                     {
                         intList[j + 1] = temp;
                         break;
