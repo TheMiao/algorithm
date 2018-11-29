@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace AlgorithmConsole
 {
     class Program
@@ -13,8 +7,10 @@ namespace AlgorithmConsole
         {
             //BubbleSort bubbleSort = new BubbleSort();
             //bubbleSort.StartUp();
-            SelectionSort selectionSort = new SelectionSort();
-            selectionSort.StartUp();
+            //SelectionSort selectionSort = new SelectionSort();
+            //selectionSort.StartUp();
+            InsertionSort insertionSort = new InsertionSort();
+            insertionSort.StartUp();
         }
     }
 }
