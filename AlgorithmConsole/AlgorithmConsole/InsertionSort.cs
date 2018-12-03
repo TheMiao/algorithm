@@ -12,27 +12,26 @@ namespace AlgorithmConsole
             InsertionSort1(arr);
         }
 
-        public void InsertionSort1(int[] intList)
+        private void InsertionSort1(int[] intList)
         {
             var watch = new Stopwatch();
             watch.Start();
-            var temp = 0;
             for (int i = 0; i < intList.Length; i++)
             {
-                temp = intList[i]; // 设定当前循环值为temp
+                var min = intList[i]; // 设定当前循环值为temp
                 for (int j = i - 1; j >= 0; j--)   // 反向循环
                 {
-                    if (intList[j] > temp) // 如果当前值大于 temp值
+                    if (intList[j] > min) // 如果当前值大于 temp值
                     {
-                        intList[j + 1] = intList[j]; // 交换两个位置的值
+                        intList[j + 1] = intList[j]; // 赋J的值给J+1
                         if (j == 0) // 如果循环到头
                         {
-                            intList[0] = temp; // 首个值为最小值
+                            intList[0] = min; // 交换min的值
                         }
                     }
-                    else // 如果当前值小于temp值
+                    else // 执行如果数组当中j的值比所比较的值小,则赋min值给j+1(j+1是比j大的值)
                     {
-                        intList[j + 1] = temp;
+                        intList[j + 1] = min;
                         break;
                     }
                 }
