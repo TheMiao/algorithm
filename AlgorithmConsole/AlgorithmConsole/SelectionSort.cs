@@ -7,7 +7,7 @@ namespace AlgorithmConsole
     {
         public void StartUp()
         {
-            int[] arr = { 15, 0, 10, 50, 55, 35, 15, 20 }; //待排序数组
+            int[] arr = { 15, 0, 10, 50, 55, 35, 16, 20 }; //待排序数组
             SelectionSort1(arr);
         }
         private void SelectionSort1(int[] intList)
@@ -19,7 +19,7 @@ namespace AlgorithmConsole
             {
                 var min = intList[i];
                 int minIndex = i;
-                for (int j = i + 1; j < intList.Length; j++) //遍历所有数组的数
+                for (int j = i + 1; j < intList.Length; j++) //遍历所有数组的数(i以前排列好的不用重新遍历,只用遍历剩下的数组)
                 {
                     if (min > intList[j]) //如果此轮选择的值大于正在遍历值
                     {
@@ -28,7 +28,7 @@ namespace AlgorithmConsole
                     }
                 }
 
-                //结束第一轮的遍历, 开始i和找到最小的数位置!
+                //结束第一轮的遍历, 开始改动i和找到最小的数位置
                 if (minIndex != i) // 如果找到比当前目标更小的最小值
                 {
                     intList[minIndex] = intList[i]; //交换所得到的最小值到当前遍历的位置
@@ -47,5 +47,6 @@ namespace AlgorithmConsole
             Console.WriteLine($"Response time {watch.Elapsed.TotalMilliseconds.ToString()}ms");
             Console.ReadLine();
         }
+        
     }
 }
