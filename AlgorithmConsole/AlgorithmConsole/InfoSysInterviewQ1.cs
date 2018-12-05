@@ -15,7 +15,7 @@ namespace AlgorithmConsole
         /// </summary>
         public void StartUp()
         {
-            Console.WriteLine("Start program.");
+            Console.WriteLine("Start xml program.");
             Console.WriteLine("While running and waiting for input");
             // Split up the 3 arguments
             var arguments = InputArguments();
