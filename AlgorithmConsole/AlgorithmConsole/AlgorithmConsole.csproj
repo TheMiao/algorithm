@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BubbleSort.cs" />
     <Compile Include="InfoSysInterviewQ1.cs" />
+    <Compile Include="InfoSysInterviewQ2.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="LeetCode.cs" />
     <Compile Include="Program.cs" />

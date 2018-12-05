@@ -5,16 +5,18 @@ namespace AlgorithmConsole
     {
         static void Main(string[] args)
         {
-            //BubbleSort bubbleSort = new BubbleSort();
+            BubbleSort bubbleSort = new BubbleSort();
             //bubbleSort.StartUp();
-            //SelectionSort selectionSort = new SelectionSort();
+            SelectionSort selectionSort = new SelectionSort();
             //selectionSort.StartUp();
-            //InsertionSort insertionSort = new InsertionSort();
+            InsertionSort insertionSort = new InsertionSort();
             //insertionSort.StartUp();
-            //LeetCode leetCode = new LeetCode();
+            LeetCode leetCode = new LeetCode();
             //leetCode.RemoveDuplicates(new int[] {1,1,2,2,3,3 });
             InfoSysInterviewQ1 infoSysInterviewQ1 = new InfoSysInterviewQ1();
-            infoSysInterviewQ1.StartUp();
+            //infoSysInterviewQ1.StartUp();
+            InfoSysInterviewQ2 infoSysInterviewQ2 = new InfoSysInterviewQ2();
+            infoSysInterviewQ2.StartUp();
         }
     }
 }
