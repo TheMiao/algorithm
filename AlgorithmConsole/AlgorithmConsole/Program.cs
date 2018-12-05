@@ -9,8 +9,12 @@ namespace AlgorithmConsole
             //bubbleSort.StartUp();
             //SelectionSort selectionSort = new SelectionSort();
             //selectionSort.StartUp();
-            InsertionSort insertionSort = new InsertionSort();
-            insertionSort.StartUp();
+            //InsertionSort insertionSort = new InsertionSort();
+            //insertionSort.StartUp();
+            //LeetCode leetCode = new LeetCode();
+            //leetCode.RemoveDuplicates(new int[] {1,1,2,2,3,3 });
+            InfoSysInterviewQ1 infoSysInterviewQ1 = new InfoSysInterviewQ1();
+            infoSysInterviewQ1.StartUp();
         }
     }
 }
