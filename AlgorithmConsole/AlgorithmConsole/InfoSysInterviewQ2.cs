@@ -42,7 +42,7 @@ namespace AlgorithmConsole
         /// <summary>
         /// check the input value to match the number
         /// </summary>
-        /// <returns></returns>
+        /// <returns>return the numbers in the array</returns>
         private int[] InputArguments()
         {
             var inputStr = string.Empty;
@@ -51,6 +51,7 @@ namespace AlgorithmConsole
             var loop = true;
             while (loop)
             {
+                // retrieve the input value.
                 Console.Write("Console input:");
                 inputStr = Console.ReadLine();
                 arguments = inputStr.Split(' ');
