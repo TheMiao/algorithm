@@ -16,7 +16,8 @@ namespace AlgorithmConsole
             InfoSysInterviewQ1 infoSysInterviewQ1 = new InfoSysInterviewQ1();
             //infoSysInterviewQ1.StartUp();
             InfoSysInterviewQ2 infoSysInterviewQ2 = new InfoSysInterviewQ2();
-            infoSysInterviewQ2.StartUp();
+            // infoSysInterviewQ2.StartUp();
+            leetCode.MaxProfit(new int[] { 1,2,3,4,5});
         }
     }
 }

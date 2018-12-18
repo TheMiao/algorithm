@@ -25,6 +25,10 @@ namespace AlgorithmConsole
             return result;
         }
 
+        /// <summary>
+        /// https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/21/
+        /// </summary>
+        /// <param name="intArray"></param>
         public void RemoveDuplicates(int[] intArray)
         {
             var intList = intArray.ToList();
@@ -41,6 +45,26 @@ namespace AlgorithmConsole
             }
 
             intList.ForEach(Console.WriteLine);
+            Console.ReadLine();
+        }
+
+
+        /// <summary>
+        /// https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/22/
+        /// </summary>
+        /// <param name="prices"></param>
+        public void MaxProfit(int[] prices)
+        {
+            var intList = prices.ToList();
+            var result = 0;
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (prices[i] > prices[i-1])
+                {
+                    result += prices[i] - prices[i - 1];
+                }
+            }
+            Console.WriteLine(result);
             Console.ReadLine();
         }
     }
